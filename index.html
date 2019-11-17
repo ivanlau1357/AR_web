@@ -7,12 +7,13 @@
 <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
 <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 <body>
-    <a-scene embedded arjs = 'sourceType: webcam;'>
+    <a-scene embedded embedded vr-mode-ui="enabled: false" arjs="sourceType: webcam;">
         <a-assets>
             <a-asset-item id="cube-obj" src="model/Cube.obj"></a-asset-item>
             <a-asset-item id="cube-mtl" src="model/Cube.mtl"></a-asset-item>
         </a-assets>
             <!-- add model -->
+        <a-marker preset="hiro">
             <a-entity cursor="fuse: true; fuseTimeout: 500"
                     position="0 0 -1"
                     geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
@@ -65,6 +66,7 @@
             color="black" 
             position="-2.5 1 0">
             </a-text>
+        </a-marker>
         <a-entity camera></a-entity>
     </a-scene>
 
