@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 </head>
 <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
-<script src="https://raw.githack.com/jeromeetienne/AR.js/2.0.8/aframe/build/aframe-ar.js"></script>
+<script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
 <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 <body>
     <a-scene embedded arjs = 'sourceType: webcam;'>
@@ -12,7 +12,6 @@
             <a-asset-item id="cube-obj" src="model/Cube.obj"></a-asset-item>
             <a-asset-item id="cube-mtl" src="model/Cube.mtl"></a-asset-item>
         </a-assets>
-        <a-anchor hit-testing-enabled='true'>
             <!-- add model -->
             <a-entity cursor="fuse: true; fuseTimeout: 500"
                     position="0 0 -1"
@@ -66,7 +65,6 @@
             color="black" 
             position="-2.5 1 0">
             </a-text>
-        </a-anchor>
         <a-entity camera></a-entity>
     </a-scene>
 
