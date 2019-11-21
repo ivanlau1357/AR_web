@@ -26,6 +26,10 @@ app.get('/model_cube', (req, res) =>{
     res.sendFile(__dirname + '/model_cube.html');
 })
 
+app.get('/event', (req, res) =>{
+    res.sendFile(__dirname + '/event.html');
+})
+
 app.get('/abcd', (req, res) => {
     // res.render('index')
     res.sendFile(__dirname + '/card.html');

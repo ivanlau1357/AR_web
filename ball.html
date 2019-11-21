@@ -19,7 +19,29 @@
             position="0.5 1.5 -0.5" 
             material="color: red" 
             radius="0.15" 
-            animation="property: components.material.material.color; type: color; from: white; to: red; loop: true; dur: 10000;">
+            animation="property: components.material.material.color; type: color; from: white; to: red; loop: true; dur: 10000;"
+            animation__2="property: position; to: -0.5 1.5 -0,5; loop: true; dur: 5000; easing: linear">
+            </a-sphere>
+            <a-sphere 
+            id="animated-model"
+            position="-0.5 1.5 -0.5" 
+            material="color: blue" 
+            radius="0.15" 
+            animation="property: components.material.material.color; type: color; from: white; to: blue; loop: true; dur: 10000;">
+            </a-sphere>
+            <a-sphere 
+            id="animated-model"
+            position="-0.5 1.5 0.5" 
+            material="color: green" 
+            radius="0.15" 
+            animation="property: components.material.material.color; type: color; from: white; to: green; loop: true; dur: 10000;">
+            </a-sphere>
+            <a-sphere 
+            id="animated-model"
+            position="0.5 1.5 0.5" 
+            material="color: yellow" 
+            radius="0.15" 
+            animation="property: components.material.material.color; type: color; from: white; to: yellow; loop: true; dur: 10000;">
             </a-sphere>
         </a-marker>
         <a-entity camera></a-entity>
