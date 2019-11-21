@@ -10,8 +10,8 @@ app.get('/', (req, res) => {
     res.render('index')
 });
 
-app.get('/test', (req, res) =>{
-    res.sendFile(__dirname + '/test.html');
+app.get('/mobile', (req, res) =>{
+    res.sendFile(__dirname + '/mobile.html');
 })
 
 app.get('/cube', (req, res) =>{
