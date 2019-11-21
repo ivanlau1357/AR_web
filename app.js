@@ -14,6 +14,18 @@ app.get('/test', (req, res) =>{
     res.sendFile(__dirname + '/test.html');
 })
 
+app.get('/cube', (req, res) =>{
+    res.sendFile(__dirname + '/cube.html');
+})
+
+app.get('/ball', (req, res) =>{
+    res.sendFile(__dirname + '/ball.html');
+})
+
+app.get('/model_cube', (req, res) =>{
+    res.sendFile(__dirname + '/model_cube.html');
+})
+
 app.get('/abcd', (req, res) => {
     // res.render('index')
     res.sendFile(__dirname + '/card.html');
