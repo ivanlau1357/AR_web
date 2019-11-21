@@ -30,7 +30,7 @@ app.get('/event', (req, res) =>{
     res.sendFile(__dirname + '/event.html');
 })
 
-app.get('/abcd', (req, res) => {
+app.get('/card', (req, res) => {
     // res.render('index')
     res.sendFile(__dirname + '/card.html');
 });
